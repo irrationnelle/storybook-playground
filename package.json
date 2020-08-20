@@ -5,7 +5,9 @@
     "dependencies": {
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
+        "react-redux": "^7.2.1",
         "react-scripts": "^3.4.1",
+        "redux": "^4.0.5",
         "typescript": "^3.9.7"
     },
     "scripts": {
@@ -32,12 +34,12 @@
         ]
     },
     "devDependencies": {
-        "@storybook/addon-actions": "^6.0.10",
-        "@storybook/addon-links": "^6.0.10",
-        "@storybook/addon-storyshots": "^6.0.10",
-        "@storybook/addons": "^6.0.10",
+        "@storybook/addon-actions": "^6.0.12",
+        "@storybook/addon-links": "^6.0.12",
+        "@storybook/addon-storyshots": "^6.0.12",
+        "@storybook/addons": "^6.0.12",
         "@storybook/preset-create-react-app": "^3.1.4",
-        "@storybook/react": "^6.0.10",
+        "@storybook/react": "^6.0.12",
         "@testing-library/jest-dom": "^5.11.2",
         "@testing-library/react": "^10.4.8",
         "@testing-library/user-event": "^12.1.1",
@@ -45,6 +47,7 @@
         "@types/node": "^14.0.27",
         "@types/react": "^16.9.45",
         "@types/react-dom": "^16.9.8",
+        "@types/react-redux": "^7.1.9",
         "react-docgen-typescript-plugin": "^0.6.0",
         "react-docgen-typescript-webpack-plugin": "^1.1.0",
         "react-test-renderer": "^16.13.1"
