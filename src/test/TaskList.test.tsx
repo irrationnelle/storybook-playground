@@ -1,10 +1,10 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { WithPinnedTasks } from "../components/TaskList.stories";
+import { WithPinnedTasks } from "../stories/TaskList.stories";
 
 it("renders pinned tasks at the start of the list", () => {
-    const { getByText } = render(<WithPinnedTasks />);
-    const lastTaskInput = getByText(/Task 6/i);
+    const { getByTestId } = render(<WithPinnedTasks />);
+    const checkedInput = getByTestId("checkbox-6") as HTMLInputElement;
 
-    expect(lastTaskInput).not.toBeNull();
+    expect(checkedInput.checked).toEqual(true);
 });

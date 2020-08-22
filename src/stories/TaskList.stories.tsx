@@ -1,6 +1,6 @@
 import React from "react";
 
-import TaskList from "../components/TaskList";
+import TaskList from "../components/PureTaskList";
 import { taskData, actionData } from "./Task.stories";
 
 export default {

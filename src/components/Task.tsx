@@ -18,8 +18,9 @@ const Task: React.FC<Props> = ({
     <div className={`list-item ${state}`}>
         <label className="checkbox">
             <input
+                data-testid={`checkbox-${id}`}
                 type="checkbox"
-                defaultChecked={state === "TASK_ARCHIVED"}
+                checked={state === "TASK_PINNED"}
                 disabled={true}
                 name="checked"
             />
