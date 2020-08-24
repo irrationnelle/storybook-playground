@@ -3,11 +3,13 @@ import { useSelector } from "react-redux";
 
 import TaskList from "./TaskList";
 
-interface Props {}
+interface Props {
+    error: string;
+}
 
-export const PureInboxScreen: React.FC<Props> = (): ReactElement => {
-    const error = useSelector(({ error }: { error: string }) => error);
-
+export const PureInboxScreen: React.FC<Props> = ({
+    error
+}: Props): ReactElement => {
     if (error) {
         return (
             <div className="page lists-show">
@@ -32,4 +34,7 @@ export const PureInboxScreen: React.FC<Props> = (): ReactElement => {
     );
 };
 
-export default PureInboxScreen;
+export const InBoxScreen: React.FC = (): ReactElement => {
+    const error = useSelector(({ error }: { error: string }) => error);
+    return <PureInboxScreen error={error} />;
+};
