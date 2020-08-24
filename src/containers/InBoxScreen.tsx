@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import TaskList from "./TaskList";
 
 interface Props {
-    error: string;
+    error?: string;
 }
 
 export const PureInboxScreen: React.FC<Props> = ({
